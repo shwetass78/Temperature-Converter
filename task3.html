@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="task3.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Temperature Converter</h1>
+      <div class="converter">
+        <!-- Input Field for Temperature -->
+        <input type="text" id="inputTemp" placeholder="Enter temperature" />
+
+        <!-- Dropdown for Unit Selection -->
+        <select id="unitSelect">
+          <option value="Celsius">Celsius</option>
+          <option value="Fahrenheit">Fahrenheit</option>
+          <option value="Kelvin">Kelvin</option>
+        </select>
+
+        <!-- Convert Button -->
+        <button onclick="convertTemperature()">Convert</button>
+
+        <!-- Display Area for Converted Temperature -->
+        <div class="result">
+          <p id="resultDisplay"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="task3.js"></script>
+  </body>
+</html>
